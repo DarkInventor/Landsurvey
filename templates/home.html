@@ -32,6 +32,7 @@
               type="file"
               name="thumbnail"
               id="thumbnail"
+              required
             />
           </div>
 
@@ -43,6 +44,7 @@
               rows="4"
               cols="50"
               placeholder="Description"
+              required
             ></textarea>
           </div>
 
@@ -52,6 +54,7 @@
               class="form-control mb-4"
               name="location"
               placeholder="Location"
+              required
             />
           </div>
 
@@ -61,6 +64,7 @@
               class="form-select"
               name="date"
               placeholder="DD-MM-YYYY"
+              required
             />
           </div>
 
@@ -73,7 +77,17 @@
           </div>
         </div>
       </div>
-      <!-- <input type="textarea" name="comments" /> -->
     </form>
+    <div class="col">
+      <div class="row-ml-8">
+        <input
+          type="submit"
+          style="width: 1150px"
+          onclick="window.location.href = 'http://127.0.0.1:5000/view'"
+          class="btn-primary btn-lg mt-4"
+          value="View All"
+        />
+      </div>
+    </div>
   </body>
 </html>
